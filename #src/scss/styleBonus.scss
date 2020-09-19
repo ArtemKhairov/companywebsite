@@ -1,0 +1,70 @@
+.row-bonheader{
+  min-height: 100vh;
+}
+.bon-title{
+  font-size:65px;
+  text-align: center;
+  @media screen and(max-width:479px){
+    font-size: 27px;
+  }
+  @media screen and(max-width:991px){
+    font-size:43px;
+  }
+}
+
+.bonus-about{
+  // align-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bon-title__span{
+  color:rgb(5, 165, 53);
+}
+
+.block__buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-resp{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.full{
+  height: 100%;
+  width: 100%;
+}
+
+.about-register__h4{
+  text-align: center;
+}
+
+.about-register__h5{
+  text-align: center;
+}
+
+.button-bonus{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width:190px;
+  font-size:18px;
+  border-radius: 30px;
+}
+
+.button-white{
+  color:rgb(5, 165, 53);
+  background-color:white;
+  border-color:rgb(5, 165, 53);
+  border:2px solid;
+}
+
+.button__block-submit{
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+}

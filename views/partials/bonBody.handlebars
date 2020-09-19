@@ -1,0 +1,47 @@
+<div class="col-12">
+  <form>
+  <label for="city">Из какого ты города?</label>
+  <div class="input-group mb-3">
+    <select class="custom-select" id="city">
+      <option value="Абакан">Абакан</option>
+      <option value="Ачинск">Ачинск</option>
+      <option value="Железногорск">Железногорск</option>
+      <option value="Минусинск">Минусинск</option>
+      <option value="Канск">Канск</option>
+      <option value="Красноярск" selected >Красноярск</option>
+      <option value="Новосибирск">Новосибирск</option>
+    </select>
+  </div>
+
+  <label for="name">Имя</label>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Имя" aria-label="Имя" aria-describedby="basic-addon2">
+  </div>
+
+  <label for="surname">Фамилия</label>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Фамилия" aria-label="Фамилия" aria-describedby="basic-addon2">
+  </div>
+
+  <label for="sex">Пол</label>
+  <div class="input-group mb-3">
+    <select class="custom-select" id="sex">
+      <option value="Мужчина" selected>Мужчина</option>
+      <option value="Женщина">Женщина</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+     <label for="phone">Телефон</label>
+     <input type="tel" name="phone" id="phone" class="form-control bfh-phone" data-format="+7 (ddd) ddd-dddd" value="" pattern="(\+[\d\ \(\)\-]{16})" />
+   </div>
+
+   <div class="form-group">
+    <label for="InputEmail">e-mail</label>
+    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Введи ваш e-mail">
+  </div>
+  <div class="w-100 button__block-submit">
+    <button type="button" class="btn btn-success button-bonus m-left">Вжух!</button>
+  </div>
+  </form>
+</div>

@@ -1,0 +1,53 @@
+.site-header{
+  background-color:#333333;
+}
+
+.navbar{
+  margin: auto;
+  max-width: 1200px;
+}
+
+.navbar-collapse{
+  align-items: center;
+  @media screen and(min-width:992px){
+    justify-content: space-evenly;
+  }
+}
+
+.nav-item{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform:uppercase;
+}
+
+.link-green{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 25px;
+  color:white!important;
+  background-color:$site-green;
+}
+
+.nav-item__pl{
+  @media screen and(min-width:992px){
+    padding-left: 20px;  
+  }
+  
+}
+
+.site-header .btn{
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform:uppercase;
+}
+
+.site-header .nav-item:hover{
+  cursor: pointer;
+}

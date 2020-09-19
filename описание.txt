@@ -1,0 +1,19 @@
+Для запуска сервера создана команда
+npm run devstart
+
+______________________________________
+app.engine('handlebars', exphbs({
+  extname: 'handlebars',
+  defaultLayout: 'index.handlebars',
+  layoutsDir: __dirname + '/views',
+  partialsDir:__dirname + '/views/partials',
+}));
+
+extname - handlebars !!!! (Иначе не видит ничего)
+
+
+nodemon не видит изменений в partials hbs
+
+nodemon -e "handlebars" (при таком запуске изменения видны,но только в index.handlebars)
+
+Можно создать конфиг nodemon.json (в нём указать файлы для отслеживания изменений)
