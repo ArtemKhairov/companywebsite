@@ -1,6 +1,18 @@
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+.header-work,
+.header-bonus{
+  padding-top: 60px;
+  @media screen and(min-width:480px){
+    padding-top: 120px;
+  }
+}
+
 .row-bonheader{
   min-height: 100vh;
 }
+
 .bon-title{
   font-size:65px;
   text-align: center;
@@ -67,4 +79,53 @@
   display: flex;
   // align-items: center;
   justify-content: center;
+}
+
+.site-form{
+  @media screen and(min-width:991px){
+    margin: auto;
+    max-width: 680px;
+  }
+}
+
+.input-group{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-label{
+  width: 100%;
+}
+
+.custom-select:hover,
+.form-control:hover{
+  cursor: pointer;
+}
+
+.custom-select,
+.form-control{
+  height: auto;
+}
+
+.custom-select,
+.form-control{
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border:1px solid black;
+  border-radius: 30px;
+}
+
+.checkbox-block{
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.checkbox-label{
+  margin-bottom: 0px;
+}
+
+.form-checkbox{
+  margin-right: 15px;
+ 
 }

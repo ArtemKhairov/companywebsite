@@ -1,67 +1,86 @@
 <div class="col-12">
-  <form>
-  <label for="city">Из какого ты города?</label>
-  <div class="input-group mb-3">
-    <select class="custom-select" id="city">
-      <option value="Абакан">Абакан</option>
-      <option value="Ачинск">Ачинск</option>
-      <option value="Железногорск">Железногорск</option>
-      <option value="Минусинск">Минусинск</option>
-      <option value="Канск">Канск</option>
-      <option value="Красноярск" selected >Красноярск</option>
-      <option value="Новосибирск">Новосибирск</option>
-    </select>
-  </div>
+  <form class="site-form">
 
-  <label for="name">Имя</label>
-  <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Имя" aria-label="Имя" aria-describedby="basic-addon2">
-  </div>
+    {{!-- Город --}}
+    <label for="city">Из какого ты города?</label>
+    <div class="input-group mb-3">
+      <select class="custom-select" id="city">
+        <option value="Абакан">Абакан</option>
+        <option value="Ачинск">Ачинск</option>
+        <option value="Железногорск">Железногорск</option>
+        <option value="Минусинск">Минусинск</option>
+        <option value="Канск">Канск</option>
+        <option value="Красноярск" selected >Красноярск</option>
+        <option value="Новосибирск">Новосибирск</option>
+      </select>
+    </div>
 
-  <label for="surname">Фамилия</label>
-  <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Фамилия" aria-label="Фамилия" aria-describedby="basic-addon2">
-  </div>
+    {{!-- Имя --}}
+    <label for="name">Имя</label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Имя" aria-label="Имя" aria-describedby="basic-addon2">
+    </div>
 
-  <div class="form-group">
-     <label for="phone">Телефон</label>
-     <input type="tel" name="phone" id="phone" class="form-control bfh-phone" data-format="+7 (ddd) ddd-dddd" value="" pattern="(\+[\d\ \(\)\-]{16})" />
-   </div>
+    {{!-- Фамилия --}}
+    <label for="surname">Фамилия</label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Фамилия" aria-label="Фамилия" aria-describedby="basic-addon2">
+    </div>
 
-  <label for="sex">Твой социальный статус</label>
-  <div class="input-group mb-3">
-    <select class="custom-select" id="sex">
-      <option value="student" > Студент</option>
-      <option value="notstudent">Не студент</option>
-    </select>
-  </div>
+    {{!-- Телефон --}}
+    <div class="form-group">
+       <label for="phone">Телефон</label>
+       <input type="tel" name="phone" id="phone" class="form-control bfh-phone" data-format="+7 (ddd) ddd-dddd" value="" pattern="(\+[\d\ \(\)\-]{16})" />
+    </div>
 
-  <label for="sheldue">Вид интересующей занятости?</label>
-  <div class="input-group mb-3">
-    <select class="custom-select" id="sheldue">
-      <option value="full" > Полная</option>
-      <option value="part">Частичная</option>
-    </select>
-  </div>
+    {{!-- Социальный статус --}}
+    <label for="sex">Твой социальный статус</label>
+    <div class="input-group mb-3">
+      <select class="custom-select" id="sex">
+        <option value="student" > Студент</option>
+        <option value="notstudent">Не студент</option>
+      </select>
+    </div>
 
-  <label for="link-social">Ссылка на социальный сети</label>
-  <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="ссылка" aria-label="Имя" aria-describedby="basic-addon2">
-  </div>
+    {{!-- Занятость --}}
+    <label for="sheldue">Вид интересующей занятости?</label>
+    <div class="input-group mb-3">
+      <select class="custom-select" id="sheldue">
+        <option value="full" > Полная</option>
+        <option value="part">Частичная</option>
+      </select>
+    </div>
 
-  <label for="street">На какой улице живешь?</label>
-  <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="улица" aria-label="улица" aria-describedby="basic-addon2">
-  </div>
-  
-  <label for="textaria">Расскажи немного про себя</label>
-  <div class="input-group">
-    <textarea class="form-control" aria-label="With textarea" placeholder="Опыт работы,увлечения и хобби"></textarea>
-  </div>
+    {{!-- Ссылка соц.сети --}}
+    <label for="link-social">Ссылка на социальный сети</label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="ссылка" aria-label="Имя" aria-describedby="basic-addon2">
+    </div>
 
+    {{!-- Адрес проживания --}}
+    <label for="street">На какой улице живешь?</label>
+    <div class="input-group mb-4">
+      <input type="text" class="form-control" placeholder="улица" aria-label="улица" aria-describedby="basic-addon2">
+    </div>
+    
+    {{!-- О себе --}}
+    <label for="textaria">Расскажи немного про себя</label>
+    <div class="input-group mb-4">
+      <textarea class="form-control" aria-label="With textarea" placeholder="Опыт работы,увлечения и хобби"></textarea>
+    </div>
 
-  <div class="w-100 button__block-submit">
-    <button type="button" class="btn btn-success button-bonus m-left">Вжух!</button>
-  </div>
+    {{!-- Пользовательское соглашение --}}
+    <div class="input-group mb-5">
+      <div class="checkbox-block">
+        <input class="form-checkbox" type="checkbox" aria-label="Checkbox for accepting policy">
+        <label class="checkbox-label">Я принимаю пользовательское соглашение</label>
+      </div>
+    </div>
+
+    {{!-- Кнопка отправки формы --}}
+    <div class="w-100 button__block-submit mb-5">
+      <button type="button" class="btn btn-success button-bonus m-left">Вжух!</button>
+    </div>
+
   </form>
 </div>

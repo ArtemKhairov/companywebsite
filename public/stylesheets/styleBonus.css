@@ -1,3 +1,12 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header-work,
+.header-bonus {
+  padding-top: 60px;
+}
+
 .row-bonheader {
   min-height: 100vh;
 }
@@ -75,6 +84,67 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form-label {
+  width: 100%;
+}
+
+.custom-select:hover,
+.form-control:hover {
+  cursor: pointer;
+}
+
+.custom-select,
+.form-control {
+  height: auto;
+}
+
+.custom-select,
+.form-control {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.checkbox-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkbox-label {
+  margin-bottom: 0px;
+}
+
+.form-checkbox {
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .header-work,
+  .header-bonus {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .site-form {
+    margin: auto;
+    max-width: 680px;
+  }
 }
 
 @media screen and (max-width: 991px) {
